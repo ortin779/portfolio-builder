@@ -1,0 +1,51 @@
+{
+  "header": {
+    "title": "My Website",
+    "profilePhotoUrl": "https://example.com/profile.jpg",
+    "logoUrl": "https://example.com/logo.png"
+  },
+  "footer": {
+    "email": "contact@example.com",
+    "github": "https://github.com/myusername",
+    "instagram": "https://instagram.com/myusername",
+    "twitter": "https://twitter.com/myusername"
+  },
+  "intro": {
+    "imageUrl": "https://example.com/intro.jpg",
+    "description": "Welcome to my website!"
+  },
+  "projects": [
+    {
+      "title": "Project 1",
+      "description": "Description of Project 1",
+      "url": "https://example.com/project1",
+      "image": "https://example.com/project1.jpg"
+    },
+    {
+      "title": "Project 2",
+      "description": "Description of Project 2",
+      "url": "https://example.com/project2",
+      "image": "https://example.com/project2.jpg"
+    }
+  ],
+  "blogs": [
+    {
+      "title": "Blog 1",
+      "description": "Description of Blog 1",
+      "url": "https://example.com/blog1",
+      "image": "https://example.com/blog1.jpg"
+    },
+    {
+      "title": "Blog 2",
+      "description": "Description of Blog 2",
+      "url": "https://example.com/blog2",
+      "image": "https://example.com/blog2.jpg"
+    }
+  ],
+  "about": {
+    "firstName": "John",
+    "lastName": "Doe",
+    "designation": "Web Developer",
+    "description": "I'm a passionate web developer with expertise in frontend development."
+  }
+}
