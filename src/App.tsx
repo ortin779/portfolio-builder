@@ -1,7 +1,7 @@
-import { Header } from "./components/Header";
+import { Shell } from "./pages/Shell";
 
 function App() {
-  return <Header />;
+  return <Shell />;
 }
 
 export default App;
