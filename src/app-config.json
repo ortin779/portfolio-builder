@@ -1,8 +1,8 @@
 {
   "header": {
-    "title": "My Website",
-    "profilePhotoUrl": "https://example.com/profile.jpg",
-    "logoUrl": "https://example.com/logo.png"
+    "title": "Naresh's Portfolio",
+    "profilePhotoUrl": "./src/assets/defaultProfile.png",
+    "logoUrl": "./src/assets/defaultLogo.png"
   },
   "footer": {
     "email": "contact@example.com",

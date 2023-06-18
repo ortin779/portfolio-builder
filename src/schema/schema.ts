@@ -1,17 +1,29 @@
 import { z } from "zod";
 
+const UrlOrPathSchema = z.string().refine((value) => {
+  try {
+    z.string().url().parse(value);
+    return true;
+  } catch (error) {
+    const pathRegex =
+      /^(?:\.{1,2}\/)*[a-zA-Z0-9_\-/]+\/(?:[\w-]+\/)*[\w-]+\.\w+$/;
+    const isValidPath = pathRegex.test(value);
+    return isValidPath;
+  }
+});
+
 const ProjectSchema = z.object({
   title: z.string(),
   description: z.string(),
   url: z.string().url(),
-  image: z.string().url(),
+  image: UrlOrPathSchema,
 });
 
 const BlogSchema = z.object({
   title: z.string(),
   description: z.string(),
   url: z.string().url(),
-  image: z.string().url(),
+  image: UrlOrPathSchema,
 });
 
 const FooterConfigSchema = z.object({
@@ -30,12 +42,12 @@ const AboutSchema = z.object({
 
 const HeaderSchema = z.object({
   title: z.string(),
-  profilePhotoUrl: z.string().url(),
-  logoUrl: z.string().url(),
+  profilePhotoUrl: UrlOrPathSchema,
+  logoUrl: UrlOrPathSchema,
 });
 
 const IntroSchema = z.object({
-  imageUrl: z.string().url(),
+  imageUrl: UrlOrPathSchema,
   description: z.string(),
 });
 
