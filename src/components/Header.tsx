@@ -4,79 +4,69 @@ import { useAppConfig } from "../contexts/AppConfig";
 export const Header = () => {
   const { header } = useAppConfig()!;
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleMenuClick = () => {
+    setIsMenuOpen((prevState) => !prevState);
+  };
+
   return (
-    <div className="bg-cyan-100 p-4 flex flex-row gap-3 items-center justify-between align-middle">
-      <div className="flex flex-row  gap-4 items-center cursor-pointer flex-shrink-0">
-        <img
-          src={header.logoUrl}
-          alt={header.title}
-          className="rounded-full h-8 w-8"
-        />
-        <h1 className="text-xl text-blue-400">{header.title}</h1>
-      </div>
-      <div className="flex gap-5 items-center align-middle">
-        <div className="hidden flex-row gap-5 pr-20 self-end md:flex">
-          <a
-            href={"projects"}
-            className="block text-lg scale-100 hover:scale-110"
-          >
-            Projects
-          </a>
-          <a href={"blogs"} className="block text-lg scale-100 hover:scale-110">
-            Blogs
-          </a>
-          <a
-            href={"about"}
-            className="block text-lg scale-100  hover:scale-110"
-          >
-            About
-          </a>
+    <nav className="w-full bg-white py-4">
+      <div className="container flex px-4 sm:mx-auto flex-row gap-3 items-center justify-between">
+        <div className="flex flex-row gap-4 items-center cursor-pointer flex-shrink-0">
+          <img
+            src={header.logoUrl}
+            alt={header.title}
+            className="rounded-full h-8 w-8"
+          />
+          <h1 className="text-2xl text-indigo-400">{header.title}</h1>
         </div>
-        <div className="w-8 h-8 rounded-2xl flex-shrink-0">
-          <img src={header.profilePhotoUrl} alt="Profile" />
-        </div>
-        <button
-          className="flex flex-col gap-1 group md:hidden"
-          onClick={() => setIsMenuOpen(true)}
-        >
-          <div className="h-1 w-6 bg-black group-hove:ease-in duration-75" />
-          <div className="h-1 w-6 bg-black group-hover:ease-in duration-75" />
-          <div className="h-1 w-6 bg-black group-hover:ease-in duration-75" />
-        </button>
+        <ul className="hidden md:flex space-x-10 text-sm font-bold uppercase text-gray-600">
+          <li className="hover:text-gray-500">
+            <a>Home</a>
+          </li>
+          <li className="hover:text-gray-500">
+            <a>Projects</a>
+          </li>
+          <li className="hover:text-gray-500">
+            <a>Blogs</a>
+          </li>
+          <li className="hover:text-gray-500">
+            <a>About</a>
+          </li>
+        </ul>
         <div
-          className={`w-full absolute h-full z-20 right-0 top-0 bg-cyan-100 flex flex-col items-center justify-evenly ${
-            !isMenuOpen && "hidden"
-          }`}
+          className={`space-y-1 md:hidden ${isMenuOpen && "hidden"}`}
+          onClick={handleMenuClick}
         >
-          <button
-            className="text-3xl top-0 absolute right-4 p-2.5"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            X
-          </button>
-          <a
-            href={"projects"}
-            onClick={() => setIsMenuOpen(false)}
-            className="block text-lg scale-100 hover:scale-110"
-          >
-            Projects
-          </a>
-          <a
-            href={"Blogs"}
-            onClick={() => setIsMenuOpen(false)}
-            className="block text-lg scale-100 hover:scale-110"
-          >
-            Blogs
-          </a>
-          <a
-            href={"About"}
-            onClick={() => setIsMenuOpen(false)}
-            className="block text-lg scale-100 hover:scale-110"
-          >
-            About
-          </a>
+          <div className="bg-black h-0.5 w-6" />
+          <div className="bg-black h-0.5 w-6" />
+          <div className="bg-black h-0.5 w-6" />
         </div>
+        <ul
+          className={`${
+            isMenuOpen ? "" : "hidden"
+          } bg-indigo-900 absolute top-0 left-0 w-full p-4 space-y-10 text-center text-gray-300 rounded-b-2xl`}
+        >
+          <div
+            className={`z-40 space-y-2 absolute right-4`}
+            onClick={handleMenuClick}
+          >
+            <strong className="text-white text-3xl">&times;</strong>
+          </div>
+          <li>
+            <a>Home</a>
+          </li>
+          <li>
+            <a>Projects</a>
+          </li>
+          <li>
+            <a>Blogs</a>
+          </li>
+          <li>
+            <a>About</a>
+          </li>
+        </ul>
       </div>
-    </div>
+    </nav>
   );
 };
