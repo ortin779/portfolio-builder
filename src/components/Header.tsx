@@ -10,7 +10,7 @@ export const Header = () => {
   };
 
   return (
-    <nav className="w-full bg-white py-4">
+    <nav className="w-full py-4">
       <div className="container flex px-4 sm:mx-auto flex-row gap-3 items-center justify-between">
         <div className="flex flex-row gap-4 items-center cursor-pointer flex-shrink-0">
           <img
@@ -18,7 +18,9 @@ export const Header = () => {
             alt={header.title}
             className="rounded-full h-8 w-8"
           />
-          <h1 className="text-2xl text-indigo-400">{header.title}</h1>
+          <h1 className="text-2xl text-indigo-900 font-nunito font-bold">
+            {header.title}
+          </h1>
         </div>
         <ul className="hidden md:flex space-x-10 text-sm font-bold uppercase text-gray-600">
           <li className="hover:text-gray-500">

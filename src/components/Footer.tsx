@@ -3,7 +3,7 @@ import { useAppConfig } from "../contexts/AppConfig";
 export const Footer = () => {
   const { footer, header } = useAppConfig()!;
   return (
-    <div className="p-4 text-cyan-300 flex flex-col gap-4 justify-around md:flex-row">
+    <div className="p-4 text-indigo-950 flex flex-col gap-4 justify-around md:flex-row">
       <div>
         <h2 className="text-2xl">{header.title}</h2>
         <h4>Let's Chat</h4>

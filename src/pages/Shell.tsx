@@ -4,12 +4,10 @@ import { AppRouter } from "../routes/AppRouter";
 
 export const Shell = () => {
   return (
-    <div className="flex flex-col font-poppins h-screen overflow-hidden bg-gradient-to-t from-indigo-300">
+    <div className="flex flex-col font-poppins h-screen w-screen overflow-hidden bg-gradient-to-t from-indigo-300">
       <Header />
       <div className="h-[calc(100%-4rem)] overflow-scroll">
-        <div className="min-h-full">
-          <AppRouter />
-        </div>
+        <AppRouter />
         <Footer />
       </div>
     </div>

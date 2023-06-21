@@ -1,3 +1,9 @@
+import { IntroSection } from "../components/Intro/IntroSection";
+
 export const HomePage = () => {
-  return <div>This is Home Page</div>;
+  return (
+    <div className="h-full">
+      <IntroSection />
+    </div>
+  );
 };

@@ -42,7 +42,6 @@ const AboutSchema = z.object({
 
 const HeaderSchema = z.object({
   title: z.string(),
-  profilePhotoUrl: UrlOrPathSchema,
   logoUrl: UrlOrPathSchema,
 });
 

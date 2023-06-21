@@ -1,8 +1,7 @@
 {
   "header": {
     "title": "Naresh's Portfolio",
-    "profilePhotoUrl": "./src/assets/defaultProfile.png",
-    "logoUrl": "./src/assets/defaultLogo.png"
+    "logoUrl": "./src/assets/images/logo.png"
   },
   "footer": {
     "email": "contact@example.com",
@@ -11,7 +10,7 @@
     "twitter": "https://twitter.com/myusername"
   },
   "intro": {
-    "imageUrl": "https://example.com/intro.jpg",
+    "imageUrl": "./src/assets/images/man.png",
     "description": "Welcome to my website!"
   },
   "projects": [
