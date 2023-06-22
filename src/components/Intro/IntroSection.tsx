@@ -21,7 +21,9 @@ export const IntroSection = () => {
           firstName + " " + lastName
         }`}</h3>
         <p className="text-lg">{description}</p>
-        <button className="font-nunito font-bold text-xl p-2 bg-indigo-100 text-gray-600 rounded-lg">{`About >`}</button>
+        <button className="font-nunito font-bold text-xl p-2 bg-indigo-400 text-white rounded-lg">
+          Know More
+        </button>
       </div>
     </div>
   );

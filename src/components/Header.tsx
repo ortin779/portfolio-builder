@@ -23,21 +23,23 @@ export const Header = () => {
           </h1>
         </div>
         <ul className="hidden md:flex space-x-10 text-sm font-bold uppercase text-gray-600">
-          <li className="hover:text-gray-500">
-            <a>Home</a>
+          <li className="hover:text-gray-500 hover:cursor-pointer">
+            <a href="/">Home</a>
           </li>
-          <li className="hover:text-gray-500">
-            <a>Projects</a>
+          <li className="hover:text-gray-500 hover:cursor-pointer">
+            <a href="/projects">Projects</a>
           </li>
-          <li className="hover:text-gray-500">
-            <a>Blogs</a>
+          <li className="hover:text-gray-500 hover:cursor-pointer">
+            <a href="/blogs">Blogs</a>
           </li>
-          <li className="hover:text-gray-500">
-            <a>About</a>
+          <li className="hover:text-gray-500 hover:cursor-pointer">
+            <a href="/about">About</a>
           </li>
         </ul>
         <div
-          className={`space-y-1 md:hidden ${isMenuOpen && "hidden"}`}
+          className={`space-y-1 md:hidden ${
+            isMenuOpen && "hidden"
+          } cursor-pointer`}
           onClick={handleMenuClick}
         >
           <div className="bg-black h-0.5 w-6" />
@@ -47,25 +49,42 @@ export const Header = () => {
         <ul
           className={`${
             isMenuOpen ? "" : "hidden"
-          } bg-indigo-900 absolute top-0 left-0 w-full p-4 space-y-10 text-center text-gray-300 rounded-b-2xl`}
+          } z-40 bg-indigo-900 absolute top-0 left-0 w-full p-4 space-y-10 text-center text-gray-300 rounded-b-2xl`}
         >
-          <div
-            className={`z-40 space-y-2 absolute right-4`}
+          <li
+            className={`z-40 space-y-2 absolute right-4 cursor-pointer`}
             onClick={handleMenuClick}
           >
             <strong className="text-white text-3xl">&times;</strong>
-          </div>
-          <li>
-            <a>Home</a>
           </li>
           <li>
-            <a>Projects</a>
+            <a href="/" className="hover:text-gray-500 hover:cursor-pointer">
+              Home
+            </a>
           </li>
           <li>
-            <a>Blogs</a>
+            <a
+              href="/projects"
+              className="hover:text-gray-500 hover:cursor-pointer"
+            >
+              Projects
+            </a>
           </li>
           <li>
-            <a>About</a>
+            <a
+              href="/blogs"
+              className="hover:text-gray-500 hover:cursor-pointer"
+            >
+              Blogs
+            </a>
+          </li>
+          <li>
+            <a
+              href="/about"
+              className="hover:text-gray-500 hover:cursor-pointer"
+            >
+              About
+            </a>
           </li>
         </ul>
       </div>

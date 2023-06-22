@@ -18,13 +18,43 @@
       "title": "Project 1",
       "description": "Description of Project 1",
       "url": "https://example.com/project1",
-      "image": "https://example.com/project1.jpg"
+      "image": "./src/assets/images/item.png"
     },
     {
       "title": "Project 2",
       "description": "Description of Project 2",
       "url": "https://example.com/project2",
-      "image": "https://example.com/project2.jpg"
+      "image": "./src/assets/images/item.png"
+    },
+    {
+      "title": "Project 2",
+      "description": "Description of Project 2",
+      "url": "https://example.com/project2",
+      "image": "./src/assets/images/item.png"
+    },
+    {
+      "title": "Project 2",
+      "description": "Description of Project 2",
+      "url": "https://example.com/project2",
+      "image": "./src/assets/images/item.png"
+    },
+    {
+      "title": "Project 2",
+      "description": "Description of Project 2",
+      "url": "https://example.com/project2",
+      "image": "./src/assets/images/item.png"
+    },
+    {
+      "title": "Project 2",
+      "description": "Description of Project 2",
+      "url": "https://example.com/project2",
+      "image": "./src/assets/images/item.png"
+    },
+    {
+      "title": "Project 2",
+      "description": "Description of Project 2",
+      "url": "https://example.com/project2",
+      "image": "./src/assets/images/item.png"
     }
   ],
   "blogs": [
@@ -32,13 +62,13 @@
       "title": "Blog 1",
       "description": "Description of Blog 1",
       "url": "https://example.com/blog1",
-      "image": "https://example.com/blog1.jpg"
+      "image": "./src/assets/images/portrait.png"
     },
     {
       "title": "Blog 2",
       "description": "Description of Blog 2",
       "url": "https://example.com/blog2",
-      "image": "https://example.com/blog2.jpg"
+      "image": "./src/assets/images/portrait.png"
     }
   ],
   "about": {

@@ -1,4 +1,3 @@
-import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import { AppRouter } from "../routes/AppRouter";
 
@@ -8,7 +7,6 @@ export const Shell = () => {
       <Header />
       <div className="h-[calc(100%-4rem)] overflow-scroll">
         <AppRouter />
-        <Footer />
       </div>
     </div>
   );
