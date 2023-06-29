@@ -1,3 +1,11 @@
+import { Contact } from "../components/common/Contact";
+import { UserDetails } from "../components/user/UserDetails";
+
 export const About = () => {
-  return <div>About</div>;
+  return (
+    <>
+      <UserDetails />
+      <Contact />
+    </>
+  );
 };

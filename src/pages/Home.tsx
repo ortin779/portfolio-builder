@@ -5,7 +5,7 @@ import { Contact } from "../components/common/Contact";
 
 export const HomePage = () => {
   return (
-    <div className="h-full overflow-visible">
+    <div className="h-full overflow-visible font-nunito">
       <IntroSection />
       <ProjectsIntro />
       <BlogsIntro />

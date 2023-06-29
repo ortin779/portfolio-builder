@@ -1,10 +1,16 @@
+import { useNavigate } from "react-router-dom";
 import { useAppConfig } from "../../contexts/AppConfig";
 
 export const IntroSection = () => {
   const {
     intro,
-    about: { firstName, lastName, description },
+    about: { firstName, lastName, description, skills },
   } = useAppConfig()!;
+  const navigate = useNavigate();
+
+  const handleKnowMore = () => {
+    navigate("/about");
+  };
   return (
     <div className="h-1/2 sm:h-full  relative">
       <img
@@ -21,7 +27,22 @@ export const IntroSection = () => {
           firstName + " " + lastName
         }`}</h3>
         <p className="text-lg">{description}</p>
-        <button className="font-nunito font-bold text-xl p-2 bg-indigo-400 text-white rounded-lg">
+        <div className="px-4 flex gap-4">
+          {skills.slice(0, 3).map((skill) => {
+            return (
+              <p
+                key={skill}
+                className="text-sm capitalize font-nunito font-semibold"
+              >
+                {skill}
+              </p>
+            );
+          })}
+        </div>
+        <button
+          onClick={handleKnowMore}
+          className="font-nunito font-bold text-xl p-2 bg-indigo-400 text-white rounded-lg"
+        >
           Know More
         </button>
       </div>

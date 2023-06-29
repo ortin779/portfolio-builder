@@ -38,6 +38,7 @@ const AboutSchema = z.object({
   lastName: z.string(),
   designation: z.string(),
   description: z.string(),
+  skills: z.string().array(),
 });
 
 const HeaderSchema = z.object({

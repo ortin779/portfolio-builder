@@ -75,6 +75,7 @@
     "firstName": "John",
     "lastName": "Doe",
     "designation": "Web Developer",
-    "description": "I'm a passionate web developer with expertise in frontend development."
+    "description": "I'm a passionate web developer with expertise in frontend development.",
+    "skills": ["React", "NodeJs", "Typescript", "HTML", "CSS"]
   }
 }
