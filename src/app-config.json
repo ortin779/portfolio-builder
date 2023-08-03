@@ -3,14 +3,15 @@
     "title": "Naresh's Portfolio",
     "logoUrl": "./src/assets/images/logo.png"
   },
-  "footer": {
+  "contact": {
     "email": "contact@example.com",
     "github": "https://github.com/myusername",
+    "linkedIn": "https://github.com/myusername",
     "instagram": "https://instagram.com/myusername",
     "twitter": "https://twitter.com/myusername"
   },
   "intro": {
-    "imageUrl": "./src/assets/images/man.png",
+    "imageUrl": "./src/assets/images/male.png",
     "description": "Welcome to my website!"
   },
   "projects": [
@@ -72,9 +73,9 @@
     }
   ],
   "about": {
-    "firstName": "John",
-    "lastName": "Doe",
-    "designation": "Web Developer",
+    "firstName": "Naresh",
+    "lastName": "C",
+    "designation": "Fullstack Developer",
     "description": "I'm a passionate web developer with expertise in frontend development.",
     "skills": ["React", "NodeJs", "Typescript", "HTML", "CSS"]
   }

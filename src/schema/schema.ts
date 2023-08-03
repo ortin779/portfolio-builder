@@ -26,9 +26,10 @@ const BlogSchema = z.object({
   image: UrlOrPathSchema,
 });
 
-const FooterConfigSchema = z.object({
+const ContactConfigSchema = z.object({
   email: z.string().email(),
   github: z.string().url(),
+  linkedIn: z.string().url(),
   instagram: z.string().url().optional(),
   twitter: z.string().url().optional(),
 });
@@ -53,7 +54,7 @@ const IntroSchema = z.object({
 
 export const AppConfigSchema = z.object({
   header: HeaderSchema,
-  footer: FooterConfigSchema,
+  contact: ContactConfigSchema,
   intro: IntroSchema,
   projects: z.array(ProjectSchema).optional(),
   blogs: z.array(BlogSchema).optional(),
@@ -62,6 +63,6 @@ export const AppConfigSchema = z.object({
 
 export type Project = z.infer<typeof ProjectSchema>;
 export type Blog = z.infer<typeof BlogSchema>;
-export type FooterConfig = z.infer<typeof FooterConfigSchema>;
+export type ContactConfig = z.infer<typeof ContactConfigSchema>;
 export type About = z.infer<typeof AboutSchema>;
 export type AppConfig = z.infer<typeof AppConfigSchema>;

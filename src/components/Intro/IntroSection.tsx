@@ -1,51 +1,53 @@
-import { useNavigate } from "react-router-dom";
+import {
+  SiGithub,
+  SiGmail,
+  SiInstagram,
+  SiLinkedin,
+  SiTwitter,
+} from "react-icons/si";
 import { useAppConfig } from "../../contexts/AppConfig";
 
 export const IntroSection = () => {
   const {
     intro,
-    about: { firstName, lastName, description, skills },
+    contact,
+    about: { firstName, lastName, description, skills, designation },
   } = useAppConfig()!;
-  const navigate = useNavigate();
 
-  const handleKnowMore = () => {
-    navigate("/about");
-  };
   return (
-    <div className="h-1/2 sm:h-full  relative">
+    <section className="flex flex-col py-8 text-center">
+      <section>
+        <h3 className="pt-4 text-4xl font-bold text-gray-800 md:text-5xl lg:text-6xl">
+          {firstName + " " + lastName}
+        </h3>
+        <h3 className="py-2 text-2xl bg-gradient-to-r from-indigo-400 to-purple-300 bg-clip-text text-transparent font-extrabold md:text-3xl lg:text-4xl">
+          {designation}
+        </h3>
+        <p className="text-xl text-center leading-8 font-extrabold md:text-2xl">
+          {description}
+        </p>
+      </section>
+      <div className="text-2xl gap-6 py-4 justify-center flex md:text-4xl md:gap-8">
+        <a href={contact.email} target="_blank">
+          <SiGmail />
+        </a>
+        <a href={contact.github} target="_blank">
+          <SiGithub />
+        </a>
+        <a href={contact.linkedIn} target="_blank">
+          <SiLinkedin />
+        </a>
+        <a href="" target="_blank">
+          <SiTwitter />
+        </a>
+        <a href="" target="_blank">
+          <SiInstagram />
+        </a>
+      </div>
       <img
         src={intro.imageUrl}
-        className="absolute object-cover h-60 sm:h-96 right-0 md:h-5/6 md:left-0 md:mx-auto"
+        className="mx-auto w-80 h-80 rounded-ful md:w-96 md:h-96"
       />
-      <div className="absolute top-10 left-10 sm:top-28 sm:left-15 sm:text-2xl lg:top-24 lg:text-5xl lg:left-28 md:left-32 md:top-32 md:text-3xl xl:left-1/4">
-        <p className="font-nunito font-bold text-indigo-500">Fullstack</p>
-        <p className="font-nunito font-bold text-red-400">Developer</p>
-      </div>
-      <div />
-      <div className="hidden absolute bg-white p-4 space-y-3 right-10 top-56 w-1/3 rounded-md shadow-md shadow-gray-500 lg:block xl:top-1/3 xl:right-24">
-        <h3 className="text-xl font-semibold">{`Hello 👋🏼, I'm ${
-          firstName + " " + lastName
-        }`}</h3>
-        <p className="text-lg">{description}</p>
-        <div className="px-4 flex gap-4">
-          {skills.slice(0, 3).map((skill) => {
-            return (
-              <p
-                key={skill}
-                className="text-sm capitalize font-nunito font-semibold"
-              >
-                {skill}
-              </p>
-            );
-          })}
-        </div>
-        <button
-          onClick={handleKnowMore}
-          className="font-nunito font-bold text-xl p-2 bg-indigo-400 text-white rounded-lg"
-        >
-          Know More
-        </button>
-      </div>
-    </div>
+    </section>
   );
 };
