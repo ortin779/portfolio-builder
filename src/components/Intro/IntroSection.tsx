@@ -11,7 +11,7 @@ export const IntroSection = () => {
   const {
     intro,
     contact,
-    about: { firstName, lastName, description, skills, designation },
+    about: { firstName, lastName, description, designation },
   } = useAppConfig()!;
 
   return (

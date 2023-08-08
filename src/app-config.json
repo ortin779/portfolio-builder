@@ -1,7 +1,7 @@
 {
   "header": {
     "title": "Naresh's Portfolio",
-    "logoUrl": "./src/assets/images/logo.png"
+    "logoUrl": "./images/logo.png"
   },
   "contact": {
     "email": "contact@example.com",
@@ -11,7 +11,7 @@
     "twitter": "https://twitter.com/myusername"
   },
   "intro": {
-    "imageUrl": "./src/assets/images/male.png",
+    "imageUrl": "./images/male.png",
     "description": "Welcome to my website!"
   },
   "projects": [
@@ -19,43 +19,43 @@
       "title": "Project 1",
       "description": "Description of Project 1",
       "url": "https://example.com/project1",
-      "image": "./src/assets/images/item.png"
+      "image": "./images/item.png"
     },
     {
       "title": "Project 2",
       "description": "Description of Project 2",
       "url": "https://example.com/project2",
-      "image": "./src/assets/images/item.png"
+      "image": "./images/item.png"
     },
     {
       "title": "Project 3",
       "description": "Description of Project 2",
       "url": "https://example.com/project2",
-      "image": "./src/assets/images/item.png"
+      "image": "./images/item.png"
     },
     {
       "title": "Project 4",
       "description": "Description of Project 2",
       "url": "https://example.com/project2",
-      "image": "./src/assets/images/item.png"
+      "image": "./images/item.png"
     },
     {
       "title": "Project 5",
       "description": "Description of Project 2",
       "url": "https://example.com/project2",
-      "image": "./src/assets/images/item.png"
+      "image": "./images/item.png"
     },
     {
       "title": "Project 6",
       "description": "Description of Project 2",
       "url": "https://example.com/project2",
-      "image": "./src/assets/images/item.png"
+      "image": "./images/item.png"
     },
     {
       "title": "Project 7",
       "description": "Description of Project 2",
       "url": "https://example.com/project2",
-      "image": "./src/assets/images/item.png"
+      "image": "./images/item.png"
     }
   ],
   "blogs": [
@@ -63,13 +63,13 @@
       "title": "Blog 1",
       "description": "Description of Blog 1",
       "url": "https://example.com/blog1",
-      "image": "./src/assets/images/portrait.png"
+      "image": "./images/portrait.png"
     },
     {
       "title": "Blog 2",
       "description": "Description of Blog 2",
       "url": "https://example.com/blog2",
-      "image": "./src/assets/images/portrait.png"
+      "image": "./images/portrait.png"
     }
   ],
   "about": {
