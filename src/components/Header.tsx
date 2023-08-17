@@ -12,7 +12,7 @@ export const Header = () => {
   };
 
   return (
-    <nav className="w-full py-4">
+    <nav className="w-full py-4 shadow-md">
       <div className="container flex px-4 sm:mx-auto flex-row gap-3 items-center justify-between">
         <div className="flex flex-row gap-4 items-center cursor-pointer flex-shrink-0">
           <img

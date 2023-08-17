@@ -1,6 +1,6 @@
 export const Contact = () => {
   return (
-    <div className="p-4 flex flex-col md:items-center my-4 bg-indigo-300 rounded-xl md:w-1/3 mx-auto space-y-4">
+    <div className="p-4 flex flex-col md:items-center my-4 rounded-xl md:w-1/2 lg:w-1/3 mx-auto space-y-4">
       <h3 className="text-xl underline md:text:2xl lg:text-3xl self-center">
         Leave a Message
       </h3>
