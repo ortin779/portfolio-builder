@@ -77,6 +77,27 @@
     "lastName": "C",
     "designation": "Fullstack Developer",
     "description": "I'm a passionate web developer with expertise in frontend development.",
-    "skills": ["React", "NodeJs", "Typescript", "HTML", "CSS"]
+    "skills": [
+      {
+        "name": "React",
+        "imageUrl": "./images/male.png",
+        "level": 90
+      },
+      {
+        "name": "HTML",
+        "imageUrl": "./images/male.png",
+        "level": 90
+      },
+      {
+        "name": "CSS",
+        "imageUrl": "./images/male.png",
+        "level": 90
+      },
+      {
+        "name": "TypeScript",
+        "imageUrl": "./images/male.png",
+        "level": 80
+      }
+    ]
   }
 }
