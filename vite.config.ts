@@ -10,5 +10,8 @@ export default defineConfig(({ mode }) => {
     server: {
       port: parseInt(env.VITE_PORT),
     },
+    build: {
+      outDir: "build",
+    },
   };
 });

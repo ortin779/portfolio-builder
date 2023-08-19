@@ -33,4 +33,4 @@ jobs:
           aws-region: ${{ secrets.AWS_REGION }}
 
       - name: Deploy the project to s3
-        run: aws s3 sync ./build/* s3://${{ secrets.AWS_S3_BUCKET}}
+        run: aws s3 sync ./build s3://${{ secrets.AWS_S3_BUCKET}}
