@@ -1,3 +1,7 @@
+<div align="center">
+    <img src="https://github-readme-tech-stack.vercel.app/api/cards?title=Portfolio+Builder+Tech+Stack&align=center&titleAlign=center&fontSize=20&lineHeight=10&lineCount=2&theme=ayu&width=450&bg=%25230B0E14&titleColor=%231c9eff&line1=react%2Creact%2Cauto%3Btailwindcss%2Ctailwind%2Cauto%3Bvite%2Cvite%2Cauto%3B&line2=typescript%2Ctypescript%2Cauto%3B%2Cemailjs%2Cauto%3B" alt="GitHub Readme Tech Stack" />
+</div>
+
 # Portfolio Builder
 
 ### Building Personal Porfolio made easy
