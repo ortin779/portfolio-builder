@@ -5,10 +5,8 @@
   },
   "contact": {
     "email": "contact@example.com",
-    "github": "https://github.com/myusername",
-    "linkedIn": "https://github.com/myusername",
-    "instagram": "https://instagram.com/myusername",
-    "twitter": "https://twitter.com/myusername"
+    "github": "https://github.com/ortin779",
+    "linkedIn": "https://www.linkedin.com/in/naresh-c-13b090140/"
   },
   "intro": {
     "imageUrl": "./images/male.png",
@@ -16,9 +14,9 @@
   },
   "projects": [
     {
-      "title": "Project 1",
-      "description": "Description of Project 1",
-      "url": "https://example.com/project1",
+      "title": "BudgetBuddy",
+      "description": "Simple webapp to store all ur expenses in One place",
+      "url": "https://github.com/red-green-squad/budget-buddy",
       "image": "./images/item.png"
     },
     {
@@ -60,16 +58,16 @@
   ],
   "blogs": [
     {
-      "title": "Blog 1",
-      "description": "Description of Blog 1",
-      "url": "https://example.com/blog1",
-      "image": "./images/portrait.png"
+      "title": "React Refs: Key to DOM Manipulation Part-1",
+      "description": "How to use react Refs to perform DOM manipulation and what are the benefits of it. When to use refs.",
+      "url": "https://dev.to/nitro779/react-refs-key-to-dom-manipulation-4pb2",
+      "image": "https://res.cloudinary.com/practicaldev/image/fetch/s--q0djrqIj--/c_imagga_scale,f_auto,fl_progressive,h_420,q_66,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/agd7u4pbo02ark42qzf5.gif"
     },
     {
-      "title": "Blog 2",
-      "description": "Description of Blog 2",
-      "url": "https://example.com/blog2",
-      "image": "./images/portrait.png"
+      "title": "React Refs: Key to DOM Manipulation Part-1",
+      "description": "Using forwardRef to provide child DOM node to parent and imperative handle of refs.",
+      "url": "https://dev.to/nitro779/react-refs-key-to-dom-manipulation-part-2-3h9a",
+      "image": "https://res.cloudinary.com/practicaldev/image/fetch/s--_E5J5Opk--/c_imagga_scale,f_auto,fl_progressive,h_420,q_66,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/qzmnmbkj5iyhrkfje379.gif"
     }
   ],
   "about": {
